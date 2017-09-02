@@ -39,11 +39,14 @@ interface gas$Drive$Folder {
   isTrashed(): boolean;
   removeEditor(emailAddress: string): gas$Drive$Folder;
   removeEditor(user: gas$Drive$User): gas$Drive$Folder;
+  removeFile(child: gas$Drive$File): gas$Drive$Folder;
+  removeFolder(child: gas$Drive$Folder): gas$Drive$Folder;
   removeViewer(emailAddresses: string[]): gas$Drive$Folder;
   removeViewer(user: gas$Drive$User): gas$Drive$Folder;
   revokePermissions(user: string): gas$Drive$Folder;
   revokePermissions(user: gas$Drive$User): gas$Drive$Folder;
-  setContent(content: string): gas$Drive$Folder;
+  searchFiles(params: string): gas$Drive$FileIterator;
+  searchFolders(params: string): gas$Drive$FolderIterator;
   setDescription(description: string): gas$Drive$Folder;
   setName(name: string): gas$Drive$Folder;
   setOwner(emailAddress: string): gas$Drive$Folder;
