@@ -1,5 +1,8 @@
 # flow-interfaces-google-apps-script
 
+[![npm](https://img.shields.io/npm/v/flow-interfaces-google-apps-script.svg)](https://www.npmjs.com/package/flow-interfaces-google-apps-script)
+[![npm](https://img.shields.io/npm/dt/flow-interfaces-google-apps-script.svg)](https://www.npmjs.com/package/flow-interfaces-google-apps-script)
+
 # Usage
 
 ## NPM or YARN

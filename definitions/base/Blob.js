@@ -17,5 +17,5 @@ interface gas$Blob {
     setContentTypeFromExtension(): gas$Blob;
     setDataFromString(string: string): gas$Blob;
     setDataFromString(string: string, charset: string): gas$Blob;
-    setName(name: string): gas$Blob
+    setName(name: string): gas$Blob;
 }

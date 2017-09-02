@@ -1,7 +1,8 @@
 {
   "name": "flow-interfaces-google-apps-script",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Flow interface declarations for the Google Apps Script API",
+  "keywords": ["flow", "google", "apps", "script"],
   "files": ["definitions"],
   "repository": "https://github.com/eiel/flow-interfaces-google-apps-script",
   "author": "Tomohiko Himura <eiel.hal@gmail.com>",
