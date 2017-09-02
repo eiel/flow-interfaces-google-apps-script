@@ -1,10 +1,10 @@
 // @flow
 // @see https://developers.google.com/apps-script/reference/properties/properties-service
 
-interface gas$PropetriesService {
+interface gas$PropertiesService {
   getDocumentProperties(): gas$Properties;
   getScriptProperties(): gas$Properties;
   getUserProperties(): gas$Properties;
 }
 
-declare var PropetriesService: gas$PropetriesService;
+declare var PropertiesService: gas$PropertiesService;

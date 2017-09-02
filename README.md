@@ -46,6 +46,15 @@ Error: index.js:3
 Found 1 error
 ```
 
+# Limited
+
+Not Used MimeType
+
+```
+const gasMimeType: gas$Enum$MimeType = ((MimeType: any): gas$Enum$MimeType);
+const mimeType: gas$MimeType = gasMimeType.ZIP;
+```
+
 # TODO
 
 ## Script Services
@@ -103,5 +112,3 @@ Found 1 error
 * [ ] Tag Manager
 * [ ] URL Shortener
 * [ ] YouTube
-
-

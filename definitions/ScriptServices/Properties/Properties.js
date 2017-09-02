@@ -6,7 +6,7 @@ interface gas$Properties {
   deleteProperty(key: string): gas$Properties;
   getKeys(): string[];
   getProperties(): Object;
-  getPropertie(key: string): ?string;
+  getProperty(key: string): ?string;
   setProperties(properties: Object): gas$Properties;
   setProperties(properties: Object, deleteAllOthers: boolean): gas$Properties;
   setProperty(key: string, value: string): gas$Properties;
