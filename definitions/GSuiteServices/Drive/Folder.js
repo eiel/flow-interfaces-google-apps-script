@@ -22,7 +22,7 @@ interface gas$Drive$Folder {
   getFiles(): gas$Drive$FileIterator;
   getFilesByName(name: string): gas$Drive$FileIterator;
   getFilesByType(mimeType: string): gas$Drive$FileIterator;
-  getFolders(): gas$Drive$Folder;
+  getFolders(): gas$Drive$FolderIterator;
   getFoldersByName(name: string): gas$Drive$FolderIterator;
   getId(): string;
   getLastUpdated(): Date;

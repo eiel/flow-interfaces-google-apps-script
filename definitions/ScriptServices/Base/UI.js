@@ -13,7 +13,7 @@ interface gas$UI{
   prompt(prompt: string): gas$PromptResponse;
   prompt(prompt: string, buttons: gas$ButtonSet): gas$PromptResponse;
   prompt(title: string, prompt: string, buttons: gas$ButtonSet): gas$PromptResponse;
-  showModalDialog(userInterface: HtmlOutput, title: string): void;
-  showModelessDialog(userInterface: HtmlOutput, title: string): void;
-  showSidebar(userInterface: HtmlOutput): void;
+  showModalDialog(userInterface: gas$HtmlOutput, title: string): void;
+  showModelessDialog(userInterface: gas$HtmlOutput, title: string): void;
+  showSidebar(userInterface: gas$HtmlOutput): void;
 }

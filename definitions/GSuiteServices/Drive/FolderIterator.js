@@ -4,5 +4,5 @@
 interface gas$Drive$FolderIterator {
   getContinuationToken(): string;
   hasNext(): boolean;
-  next(): gas$Drive$Foleder;
+  next(): gas$Drive$Folder;
 }

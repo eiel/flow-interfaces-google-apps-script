@@ -31,4 +31,4 @@ interface gas$Drive$DriveApp {
   searchFolders(params: string): gas$Drive$FolderIterator;
 }
 
-declare var DriveApp: gas$$Drive$DriveApp;
+declare var DriveApp: gas$Drive$DriveApp;

@@ -4,7 +4,7 @@
 interface gas$Session {
   getActiveUser(): gas$User;
   getActiveUserLocale(): string;
-  getEffectiveUser(): User;
+  getEffectiveUser(): gas$User;
   getScriptTimeZone(): string;
   getTemporaryActiveUserKey(): string;
 }

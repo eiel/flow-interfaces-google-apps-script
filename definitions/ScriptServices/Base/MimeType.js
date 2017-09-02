@@ -36,4 +36,4 @@ interface gas$Enum$MimeType {
   ZIP: gas$MimeType;
 }
 
-declare var MimeType: gas$MimeTypee;
+// declare var MimeType: gas$MimeType
