@@ -3,7 +3,7 @@
 
 opaque type gas$XFrameOptionsMode = any;
 
-interface gas$Enum$FrameOptionsMode {
+interface gas$Enum$XFrameOptionsMode {
   +ALLOWALL: gas$XFrameOptionsMode;
   +DEFAULT: gas$XFrameOptionsMode;
 }
