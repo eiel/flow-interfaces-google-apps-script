@@ -75,7 +75,7 @@ const mimeType: gas$Base$MimeType = gasMimeType.ZIP;
 * [ ] XML
 
 
-## Gsuite Service
+## G Suite Service
 
 * [ ] Calendar
 * [ ] Contacts
