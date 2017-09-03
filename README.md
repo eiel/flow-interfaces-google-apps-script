@@ -63,7 +63,7 @@ const mimeType: gas$Base$MimeType = gasMimeType.ZIP;
 * [X] Cache
 * [X] Charts
 * [X] Content
-* [ ] HTML
+* [X] HTML
 * [ ] JDBC
 * [ ] Lock
 * [ ] Mail
@@ -99,7 +99,7 @@ const mimeType: gas$Base$MimeType = gasMimeType.ZIP;
 * [ ] Classroom
 * [ ] Drive
 * [ ] DoubleClick Campaigns
-* [ ] Fusion Tabels
+* [ ] Fusion Tables
 * [ ] Gmail
 * [ ] Google+
 * [ ] Google+ Domains
