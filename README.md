@@ -51,8 +51,8 @@ Found 1 error
 Not Used MimeType
 
 ```
-const gasMimeType: gas$Enum$MimeType = ((MimeType: any): gas$Enum$MimeType);
-const mimeType: gas$MimeType = gasMimeType.ZIP;
+const gasMimeType: gas$$Base$Enum$MimeType = ((MimeType: any): gas$Base$Enum$MimeType);
+const mimeType: gas$Base$MimeType = gasMimeType.ZIP;
 ```
 
 # TODO
