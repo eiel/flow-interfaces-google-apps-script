@@ -61,7 +61,7 @@ const mimeType: gas$MimeType = gasMimeType.ZIP;
 
 * [X] Base
 * [X] Cache
-* [ ] Charts
+* [X] Charts
 * [ ] Content
 * [ ] HTML
 * [ ] JDBC
