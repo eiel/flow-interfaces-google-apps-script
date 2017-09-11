@@ -69,7 +69,7 @@ const mimeType: gas$Base$MimeType = gasMimeType.ZIP;
 * [X] Mail
 * [X] Optimization
 * [X] Properties
-* [ ] Script
+* [X] Script
 * [X] URL Fetch
 * [ ] Utilities
 * [ ] XML
