@@ -71,7 +71,7 @@ const mimeType: gas$Base$MimeType = gasMimeType.ZIP;
 * [X] Properties
 * [X] Script
 * [X] URL Fetch
-* [ ] Utilities
+* [X] Utilities
 * [ ] XML
 
 
