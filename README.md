@@ -72,7 +72,7 @@ const mimeType: gas$Base$MimeType = gasMimeType.ZIP;
 * [X] Script
 * [X] URL Fetch
 * [X] Utilities
-* [ ] XML
+* [X] XML
 
 
 ## G Suite Service
