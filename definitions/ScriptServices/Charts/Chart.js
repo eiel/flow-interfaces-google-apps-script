@@ -5,7 +5,7 @@ interface gas$Chart {
   getAs(contentType: gas$ContentType): gas$Blob;
   getBlob(): gas$Blob;
   getId(): string;
-  getOptions(): gas$ChartOptinos;
+  getOptions(): gas$ChartOptions;
   getType(): string;
   setId(id: string): gas$Chart;
 }

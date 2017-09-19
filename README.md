@@ -86,7 +86,7 @@ const mimeType: gas$Base$MimeType = gasMimeType.ZIP;
 * [ ] Groups
 * [ ] Language
 * [ ] Maps
-* [ ] Spreadsheet
+* [X] Spreadsheet
 
 ## Advanced Google Services
 

@@ -11,6 +11,6 @@ interface gas$Content {
   asText(): gas$Text;
   detach(): gas$Content;
   getParentElement(): gas$Element;
-  getType(): gas$ContentType;
+  getType(): gas$XML$ContentType;
   getValue(): string;
 }

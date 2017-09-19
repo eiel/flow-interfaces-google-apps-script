@@ -1,7 +1,7 @@
 // @flow
 // @see https://developers.google.com/apps-script/reference/base/ui
 
-interface gas$UI{
+interface gas$Ui{
   +Button: gas$Enum$Button;
   +ButtonSet: gas$Enum$ButtonSet;
 
