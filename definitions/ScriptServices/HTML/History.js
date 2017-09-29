@@ -9,5 +9,5 @@ interface gas$History$Event {
 interface gas$History {
   push(stateObject: Object, params: {[string]: string}, hash: string): void;
   replace(stateObject: Object, params: {[string]: string}, hash: string): void;
-  setChangeHandler(function: (e: gas$History$Event) => any): void;
+  setChangeHandler(func: (e: gas$History$Event) => any): void;
 }
