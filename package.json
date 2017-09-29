@@ -1,9 +1,15 @@
 {
   "name": "flow-interfaces-google-apps-script",
-  "version": "0.0.26",
+  "version": "0.0.27",
   "description": "Flow interface declarations for the Google Apps Script API",
   "keywords": ["flow", "google", "apps", "script"],
   "files": ["definitions"],
+  "scripts": {
+    "release": "npm publish && yarn git:release",
+    "git:release": "yarn git:tag && yarn git:push",
+    "git:push": "git push --tags && git push",
+    "git:tag": "git tag v`jq -r '.version' package.json`"
+  },
   "repository": "https://github.com/eiel/flow-interfaces-google-apps-script",
   "author": "Tomohiko Himura <eiel.hal@gmail.com>",
   "license": "MIT"
