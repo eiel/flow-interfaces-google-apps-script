@@ -8,7 +8,7 @@
 ## NPM or YARN
 
 ```
-npm install --save-dev flow-interface-google-apps-script
+npm install --save-dev flow-interfaces-google-apps-script
 ```
 
 ## Flow Config
