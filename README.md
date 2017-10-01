@@ -83,7 +83,7 @@ const mimeType: gas$Base$MimeType = gasMimeType.ZIP;
 * [X] Drive
 * [X] Forms
 * [X] Gmail
-* [ ] Groups
+* [X] Groups
 * [ ] Language
 * [ ] Maps
 * [X] Spreadsheet
