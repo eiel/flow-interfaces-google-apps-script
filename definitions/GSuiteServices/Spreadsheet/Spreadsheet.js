@@ -26,7 +26,7 @@ interface gas$Spreadsheet$Spreadsheet {
   getBlob(): gas$Blob;
   getColumnWidth(columnPosition: number): number;
   getDataRange(): gas$Spreadsheet$Range;
-  getEditors(): gas$User;
+  getEditors(): gas$User[];
   getFormUrl(): string;
   getFrozenColumns(): number;
   getFrozenRows(): number;
@@ -34,10 +34,10 @@ interface gas$Spreadsheet$Spreadsheet {
   getLastColumn(): number;
   getLastRow(): number;
   getName(): string;
-  getNamedRanges(): gas$Spreadsheet$NamedRange;
+  getNamedRanges(): gas$Spreadsheet$NamedRange[];
   getNumSheets(): number;
   getOwner(): gas$User;
-  getProtections(type: gas$Spreadsheet$ProtectionType): gas$Spreadsheet$Protection;
+  getProtections(type: gas$Spreadsheet$ProtectionType): gas$Spreadsheet$Protection[];
   getRange(a1Notation: string): gas$Spreadsheet$Range;
   getRangeByName(name: string): gas$Spreadsheet$Range;
   getRowHeight(rowPosition: number): number;
@@ -49,7 +49,7 @@ interface gas$Spreadsheet$Spreadsheet {
   getSpreadsheetLocale(): string;
   getSpreadsheetTimeZone(): string;
   getUrl(): string;
-  getViewers(): gas$User;
+  getViewers(): gas$User[];
   hideColumn(column: number): void;
   hideRow(row: number): void;
   insertColumnAfter(afterPosition: number): gas$Spreadsheet$Sheet;

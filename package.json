@@ -1,6 +1,6 @@
 {
   "name": "flow-interfaces-google-apps-script",
-  "version": "0.0.36",
+  "version": "0.1.0",
   "description": "Flow interface declarations for the Google Apps Script API",
   "keywords": [
     "flow",
