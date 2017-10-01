@@ -46,3 +46,5 @@ interface gas$Contacts$ContactsApp {
   getContactsByUrl(query: string, label: gas$Contacts$Field): gas$Contacts$Contact[];
   getContactsByUrl(query: string, label: string): gas$Contacts$Contact[];
 }
+
+declare var ContactApp: gas$Contacts$ContactsApp;

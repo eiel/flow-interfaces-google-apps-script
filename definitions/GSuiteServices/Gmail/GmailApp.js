@@ -90,3 +90,5 @@ interface gas$Gmail$GmailApp {
   unstarMessage(message: gas$Gmail$GmailMessage): gas$Gmail$GmailApp;
   unstarMessages(messages: gas$Gmail$GmailMessage[]): gas$Gmail$GmailApp;
 }
+
+declare var GmailApp: gas$Gmail$GmailApp;

@@ -20,3 +20,5 @@ interface gas$Form$FormApp {
   openById(id: string): gas$Form$Form;
   openByUrl(url: string): gas$Form$Form;
 }
+
+declare var FormApp: gas$Form$FormApp;

@@ -18,3 +18,5 @@ interface gas$Document$DocumentApp {
   openById(id: string): gas$Document$Document;
   openByUrl(url: string): gas$Document$Document;
 }
+
+declare var DocumentApp: gas$Document$DocumentApp;

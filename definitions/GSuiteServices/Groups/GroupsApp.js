@@ -7,3 +7,5 @@ interface gas$Groups$GroupsApp {
   getGroupByEmail(email: string): gas$Groups$Group;
   getGroups(): gas$Groups$Group[];
 }
+
+declare var GroupsApp: gas$Groups$GroupsApp;
