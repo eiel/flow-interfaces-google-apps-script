@@ -1,0 +1,68 @@
+// @flow
+// @see https://developers.google.com/apps-script/reference/document/paragraph
+
+interface gas$Document$Paragraph {
+  addPositionedImage(image: gas$BlobSource): gas$Document$PositionedImage;
+  appendHorizontalRule(): gas$Document$HorizontalRule;
+  appendInlineImage(image: gas$BlobSource): gas$Document$InlineImage;
+  appendInlineImage(image: gas$Document$InlineImage): gas$Document$InlineImage;
+  appendPageBreak(): gas$Document$PageBreak;
+  appendPageBreak(pageBreak: gas$Document$PageBreak): gas$Document$PageBreak;
+  appendText(text: string): gas$Document$Text;
+  appendText(text: string): gas$Document$Text;
+  clear(): gas$Document$Paragraph;
+  copy(): gas$Document$Paragraph;
+  editAsText(): gas$Document$Text;
+  findElement(elementType: gas$Document$ElementType): gas$Document$RangeElement;
+  findElement(elementType: gas$Document$ElementType, from: gas$Document$RangeElement): gas$Document$RangeElement;
+  findText(searchPattern: string): gas$Document$RangeElement;
+  findText(searchPattern: string, from: gas$Document$RangeElement): gas$Document$RangeElement;
+  getAlignment(): gas$Document$HorizontalAlignment;
+  getAttributes(): Object;
+  getChild(childIndex: gas$Integer): gas$Document$Element;
+  getChildIndex(child: gas$Document$Element): gas$Integer;
+  getHeading(): gas$Document$ParagraphHeading;
+  getIndentEnd(): number;
+  getIndentFirstLine(): number;
+  getIndentStart(): number;
+  getLineSpacing(): number;
+  getLinkUrl(): string;
+  getNextSibling(): gas$Document$Element;
+  getNumChildren(): gas$Integer;
+  getParent(): gas$Document$ContainerElement;
+  getPositionedImage(id: string): gas$Document$PositionedImage;
+  getPositionedImages(): gas$Document$PositionedImage[];
+  getPreviousSibling(): gas$Document$Element;
+  getSpacingAfter(): number;
+  getSpacingBefore(): number;
+  getText(): string;
+  getTextAlignment(): gas$Document$TextAlignment;
+  getType(): gas$Document$ElementType;
+  insertHorizontalRule(childIndex: gas$Integer): gas$Document$HorizontalRule;
+  insertInlineImage(childIndex: gas$Integer, image: gas$BlobSource): gas$Document$InlineImage;
+  insertInlineImage(childIndex: gas$Integer, image: gas$Document$InlineImage): gas$Document$InlineImage;
+  insertPageBreak(childIndex: gas$Integer): gas$Document$PageBreak;
+  insertPageBreak(childIndex: gas$Integer, pageBreak: gas$Document$PageBreak): gas$Document$PageBreak;
+  insertText(childIndex: gas$Integer, text: string): gas$Document$Text;
+  insertText(childIndex: gas$Integer, text: gas$Document$Text): gas$Document$Text;
+  isAtDocumentEnd(): boolean;
+  isLeftToRight(): boolean;
+  merge(): gas$Document$Paragraph;
+  removeChild(child: gas$Document$Element): gas$Document$Paragraph;
+  removeFromParent(): gas$Document$Paragraph;
+  removePositionedImage(id: string): boolean;
+  replaceText(searchPattern: string, replacement: string): gas$Document$Element;
+  setAlignment(alignment: gas$Document$HorizontalAlignment): gas$Document$Paragraph;
+  setAttributes(attributes: Object): gas$Document$Paragraph;
+  setHeading(heading: gas$Document$ParagraphHeading): gas$Document$Paragraph;
+  setIndentEnd(indentEnd: number): gas$Document$Paragraph;
+  setIndentFirstLine(indentFirstLine: number): gas$Document$Paragraph;
+  setIndentStart(indentStart: number): gas$Document$Paragraph;
+  setLeftToRight(leftToRight: boolean): gas$Document$Paragraph;
+  setLineSpacing(multiplier: number): gas$Document$Paragraph;
+  setLinkUrl(url: string): gas$Document$Paragraph;
+  setSpacingAfter(spacingAfter: number): gas$Document$Paragraph;
+  setSpacingBefore(spacingBefore: number): gas$Document$Paragraph;
+  setText(text: string): void;
+  setTextAlignment(textAlignment: gas$Document$TextAlignment): gas$Document$Paragraph;
+}

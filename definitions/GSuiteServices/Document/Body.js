@@ -1,0 +1,67 @@
+// @flow
+// @see https://developers.google.com/apps-script/reference/document/body
+
+interface gas$Document$Body {
+  appendHorizontalRule(): gas$Document$HorizontalRule;
+  appendImage(image: gas$BlobSource): gas$Document$InlineImage;
+  appendImage(image: gas$Document$InlineImage): gas$Document$InlineImage;
+  appendListItem(listItem: gas$Document$InlineImage): gas$Document$ListItem;
+  appendListItem(text: string): gas$Document$ListItem;
+  appendPageBreak(): gas$Document$PageBreak;
+  appendPageBreak(pageBreak: gas$Document$PageBreak): gas$Document$PageBreak;
+  appendParagraph(paragraph: gas$Document$Paragraph): gas$Document$Paragraph;
+  appendParagraph(text: string): gas$Document$Paragraph;
+  appendTable(): gas$Document$Table;
+  appendTable(cells: string[][]): gas$Document$Table;
+  appendTable(table: gas$Document$Table): gas$Document$Table;
+  clear(): gas$Document$Body;
+  copy(): gas$Document$Body;
+  editAsText(): gas$Document$Text;
+  findElement(elementType: gas$Document$ElementType): gas$Document$RangeElement;
+  findElement(elementType: gas$Document$ElementType, from: gas$Document$RangeElement): gas$Document$RangeElement;
+  findText(searchPattern: string): gas$Document$RangeElement;
+  findText(searchPattern: string, from: gas$Document$RangeElement): gas$Document$RangeElement;
+  getAttributes(): Object;
+  getChild(childIndex: gas$Integer): gas$Document$Element;
+  getChildIndex(child: gas$Document$Element): gas$Integer;
+  getHeadingAttributes(paragraphHeading: gas$Document$ParagraphHeading): Object;
+  getImages(): gas$Document$InlineImage[];
+  getListItems(): gas$Document$ListItem[];
+  getMarginBottom(): number;
+  getMarginLeft(): number;
+  getMarginRight(): number;
+  getMarginTop(): number;
+  getNumChildren(): gas$Integer;
+  getPageHeight(): number;
+  getPageWidth(): number;
+  getParagraphs(): gas$Document$Paragraph[];
+  getParent(): gas$Document$ContainerElement;
+  getTables(): gas$Document$Table[];
+  getText(): String;
+  getTextAlignment(): gas$Document$TextAlignment;
+  getType(): gas$Document$ElementType;
+  insertHorizontalRule(childIndex: gas$Integer): gas$Document$HorizontalRule;
+  insertImage(childIndex: gas$Integer, image: gas$BlobSource): gas$Document$InlineImage;
+  insertImage(childIndex: gas$Integer, image: gas$Document$InlineImage): gas$Document$InlineImage;
+  insertListItem(childIndex: gas$Integer, listItem: gas$Document$ListItem): gas$Document$ListItem;
+  insertListItem(childIndex: gas$Integer, text: string): gas$Document$ListItem;
+  insertPageBreak(childIndex: gas$Integer): gas$Document$PageBreak;
+  insertPageBreak(childIndex: gas$Integer, pageBreak: gas$Document$PageBreak): gas$Document$PageBreak;
+  insertParagraph(childIndex: gas$Integer, paragraph: gas$Document$Paragraph): gas$Document$Paragraph;
+  insertParagraph(childIndex: gas$Integer, text: string): gas$Document$Paragraph;
+  insertTable(childIndex: gas$Integer): gas$Document$Table;
+  insertTable(childIndex: gas$Integer, cells: string[][]): gas$Document$Table;
+  insertTable(childIndex: gas$Integer, table: gas$Document$Table): gas$Document$Table;
+  removeChild(child: gas$Document$Element): gas$Document$Body;
+  replaceText(searchPattern: string, replacement: string): gas$Document$Element;
+  setAttributes(attributes: Object): gas$Document$Body;
+  setHeadingAttributes(paragraphHeading: gas$Document$ParagraphHeading, attributes: Object): gas$Document$Body;
+  setMarginBottom(marginBottom: number): gas$Document$Body;
+  setMarginLeft(marginLeft: number): gas$Document$Body;
+  setMarginRight(marginRight: number): gas$Document$Body;
+  setMarginTop(marginTop: number): gas$Document$Body;
+  setPageHeight(pageHeight: number): gas$Document$Body;
+  setPageWidth(pageWidth: number): gas$Document$Body;
+  setText(text: string): gas$Document$Body;
+  setTextAlignment(textAlignment: gas$Document$TextAlignment): gas$Document$Body;
+}

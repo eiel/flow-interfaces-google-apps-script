@@ -1,0 +1,67 @@
+// @flow
+// @see https://developers.google.com/apps-script/reference/document/text
+
+interface gas$Document$Text {
+  appendText(text: string): gas$Document$Text;
+  copy(): gas$Document$Text;
+  deleteText(startOffset: gas$Integer, endOffsetInclusive: gas$Integer): gas$Document$Text;
+  editAsText(): gas$Document$Text;
+  findText(searchPattern: string): gas$Document$RangeElement;
+  findText(searchPattern: string, from: gas$Document$RangeElement): gas$Document$RangeElement;
+  getAttributes(): Object;
+  getAttributes(offset: gas$Integer): Object;
+  getBackgroundColor(): string;
+  getBackgroundColor(offset: gas$Integer): string;
+  getFontFamily(): string;
+  getFontFamily(offset: gas$Integer): string;
+  getFontSize(): gas$Integer;
+  getFontSize(offset: gas$Integer): gas$Integer;
+  getForegroundColor(): string;
+  getForegroundColor(offset: gas$Integer): string;
+  getLinkUrl(): string;
+  getLinkUrl(offset: gas$Integer): string;
+  getNextSibling(): gas$Document$Element;
+  getParent(): gas$Document$ContainerElement;
+  getPreviousSibling(): gas$Document$Element;
+  getText(): string;
+  getTextAlignment(): gas$Document$TextAlignment;
+  getTextAlignment(offset: gas$Integer): gas$Document$TextAlignment;
+  getTextAttributeIndices(): gas$Integer[];
+  getType(): gas$Document$ElementType;
+  insertText(offset: gas$Integer, text: string): gas$Document$Text;
+  isAtDocumentEnd(): boolean;
+  isBold(): boolean;
+  isBold(offset: gas$Integer): boolean;
+  isItalic(): boolean;
+  isItalic(offset: gas$Integer): boolean;
+  isStrikethrough(): boolean;
+  isStrikethrough(offset: gas$Integer): boolean;
+  isUnderline(): boolean;
+  isUnderline(offset: gas$Integer): boolean;
+  merge(): gas$Document$Text;
+  removeFromParent(): gas$Document$Text;
+  replaceText(searchPattern: string, replacement: string): gas$Document$Element;
+  setAttributes(startOffset: gas$Integer, endOffsetInclusive: gas$Integer, attributes: Object): gas$Document$Text;
+  setAttributes(attributes: Object): gas$Document$Text;
+  setBackgroundColor(startOffset: gas$Integer, endOffsetInclusive: gas$Integer, color: string): gas$Document$Text;
+  setBackgroundColor(color: string): gas$Document$Text;
+  setBold(bold: boolean): gas$Document$Text;
+  setBold(startOffset: gas$Integer, endOffsetInclusive: gas$Integer, bold: boolean): gas$Document$Text;
+  setFontFamily(startOffset: gas$Integer, endOffsetInclusive: gas$Integer, fontFamilyName: string): gas$Document$Text;
+  setFontFamily(fontFamilyName: string): gas$Document$Text;
+  setFontSize(size: gas$Integer): gas$Document$Text;
+  setFontSize(startOffset: gas$Integer, endOffsetInclusive: gas$Integer, size: gas$Integer): gas$Document$Text;
+  setForegroundColor(startOffset: gas$Integer, endOffsetInclusive: gas$Integer, color: string): gas$Document$Text;
+  setForegroundColor(color: string): gas$Document$Text;
+  setItalic(italic: boolean): gas$Document$Text;
+  setItalic(startOffset: gas$Integer, endOffsetInclusive: gas$Integer, italic: boolean): gas$Document$Text;
+  setLinkUrl(startOffset: gas$Integer, endOffsetInclusive: gas$Integer, url: string): gas$Document$Text;
+  setLinkUrl(url: string): gas$Document$Text;
+  setStrikethrough(strikethrough: boolean): gas$Document$Text;
+  setStrikethrough(startOffset: gas$Integer, endOffsetInclusive: gas$Integer, strikethrough: boolean): gas$Document$Text;
+  setText(text: string): gas$Document$Text;
+  setTextAlignment(startOffset: gas$Integer, endOffsetInclusive: gas$Integer, textAlignment: gas$Document$TextAlignment): gas$Document$Text;
+  setTextAlignment(textAlignment: gas$Document$TextAlignment): gas$Document$Text;
+  setUnderline(underline: boolean): gas$Document$Text;
+  setUnderline(startOffset: gas$Integer, endOffsetInclusive: gas$Integer, underline: boolean): gas$Document$Text;
+}
