@@ -2,41 +2,41 @@
 // @see https://developers.google.com/apps-script/reference/gmail/gmail-message
 
 interface gas$Gmail$CreateReplyOption {
-  +attachments: gas$BlobSource[];
-  +bcc: string;
-  +cc: string;
-  +from: string;
-  +htmlBody: string;
-  +inlineImages: Object;
-  +name: string;
-  +replyTo: string;
-  +subject: string;
+  attachments?: gas$BlobSource[];
+  bcc?: string;
+  cc?: string;
+  from?: string;
+  htmlBody?: string;
+  inlineImages?: Object;
+  name?: string;
+  replyTo?: string;
+  subject?: string;
 }
 
 interface gas$Gmail$ForwardOption {
-  +attachments: gas$BlobSource[];
-  +bcc: string;
-  +cc: string;
-  +from: string;
-  +htmlBody: string;
-  +inlineImages: Object;
-  +name: string;
-  +noReply: boolean;
-  +replyTo: string;
-  +subject: string;
+  attachments?: gas$BlobSource[];
+  bcc?: string;
+  cc?: string;
+  from?: string;
+  htmlBody?: string;
+  inlineImages?: Object;
+  name?: string;
+  noReply?: boolean;
+  replyTo?: string;
+  subject?: string;
 }
 
 interface gas$Gmail$MessageReplayOption {
-  +attachments: gas$BlobSource[];
-  +bcc: String;
-  +cc: String;
-  +from: String;
-  +htmlBody: String;
-  +inlineImages: Object;
-  +name: String;
-  +noReply: Boolean;
-  +replyTo: String;
-  +subject: String;
+  attachments?: gas$BlobSource[];
+  bcc?: String;
+  cc?: String;
+  from?: String;
+  htmlBody?: String;
+  inlineImages?: Object;
+  name?: String;
+  noReply?: boolean;
+  replyTo?: String;
+  subject?: String;
 }
 
 interface gas$Gmail$GmailMessage {

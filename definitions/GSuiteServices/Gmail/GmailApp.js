@@ -2,26 +2,26 @@
 // @see https://developers.google.com/apps-script/reference/gmail/gmail-app
 
 interface gas$Gmail$CreateDrapftOption {
-  +attachments: gas$BlobSource[];
-  +bcc: string;
-  +cc: string;
-  +from: string;
-  +htmlBody: string;
-  +inlineImages: Object;
-  +name: string;
-  +replyTo: string;
+  attachments?: gas$BlobSource[];
+  bcc?: string;
+  cc?: string;
+  from?: string;
+  htmlBody?: string;
+  inlineImages?: Object;
+  name?: string;
+  replyTo?: string;
 }
 
 interface gas$Gmail$SendEmailOption {
-  +attachments: gas$BlobSource[];
-  +bcc: string;
-  +cc: string;
-  +from: string;
-  +htmlBody: string;
-  +inlineImages: Object;
-  +name: string;
-  +noReply: boolean;
-  +replyTo: string;
+  attachments?: gas$BlobSource[];
+  bcc?: string;
+  cc?: string;
+  from?: string;
+  htmlBody?: string;
+  inlineImages?: Object;
+  name?: string;
+  noReply?: boolean;
+  replyTo?: string;
 }
 
 interface gas$Gmail$GmailApp {
