@@ -23,4 +23,4 @@ interface gas$Spreadsheet$SpreadsheetApp {
   setActiveSpreadsheet(newActiveSpreadsheet: gas$Spreadsheet$Spreadsheet): void;
 }
 
-declare var spreadsheetApp: gas$Spreadsheet$SpreadsheetApp;
+declare var SpreadsheetApp: gas$Spreadsheet$SpreadsheetApp;

@@ -1,5 +1,5 @@
 // @flow
-// @see https://developers.google.com/apps-script/reference/spreadsheet/gas$Spreadsheet$Range
+// @see https://developers.google.com/apps-script/reference/spreadsheet/range
 
 interface gas$Spreadsheet$Range$ClearOptions {
   commentsOnly?: boolean;
@@ -17,6 +17,7 @@ type gas$Spreadsheet$FontLine = "underline" | "line-through" | "none";
 type gas$Spreadsheet$FontStyle = "italic" | "normal";
 type gas$Spreadsheet$HorizontalAlignment = "left" | "center" | "normal";
 type gas$Spreadsheet$VerticalAlignment = "top" | "middel" | "bottom";
+type gas$Spreadsheet$Value = Date | number | boolean | string;
 
 interface gas$Spreadsheet$Range {
   activate(): gas$Spreadsheet$Range;
@@ -78,8 +79,8 @@ interface gas$Spreadsheet$Range {
   getRow(): number;
   getRowIndex(): number;
   getSheet(): gas$Spreadsheet$Sheet;
-  getValue(): Object;
-  getValues(): Object[][];
+  getValue(): gas$Spreadsheet$Value;
+  getValues(): gas$Spreadsheet$Value[][];
   getVerticalAlignment(): string;
   getVerticalAlignments(): string[][];
   getWidth(): number;
@@ -129,8 +130,8 @@ interface gas$Spreadsheet$Range {
   setNotes(notes: string[][]): gas$Spreadsheet$Range;
   setNumberFormat(numberFormat: string): gas$Spreadsheet$Range;
   setNumberFormats(numberFormats: string[][]): gas$Spreadsheet$Range;
-  setValue(value: Object): gas$Spreadsheet$Range;
-  setValues(values: Object[][]): gas$Spreadsheet$Range;
+  setValue(value: gas$Spreadsheet$Value): gas$Spreadsheet$Range;
+  setValues(values: gas$Spreadsheet$Value[][]): gas$Spreadsheet$Range;
   setVerticalAlignment(alignment: ?gas$Spreadsheet$VerticalAlignment): gas$Spreadsheet$Range;
   setVerticalAlignments(alignments: gas$Spreadsheet$VerticalAlignment[][]): gas$Spreadsheet$Range;
   setWrap(isWrapEnabled: boolean): gas$Spreadsheet$Range;

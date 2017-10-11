@@ -4,11 +4,11 @@
 type gas$Method = "post" | "get" | "delete" | "put"
 type gas$Headers = {[string]: string}
 
-declare interface gas$UrlFetchApp$Parameters {
+interface gas$UrlFetchApp$Parameters {
     contentType?: string;
     headers?: Headers;
     method?: gas$Method;
-    payload?: String;
+    payload?: Object | string;
     useInternet?: boolean;
     validateHttpsCertificates?: boolean;
     followRedirects?: boolean;
@@ -16,11 +16,11 @@ declare interface gas$UrlFetchApp$Parameters {
     escaping?: boolean;
 }
 
-declare class gas$UrlFetchApp {
+interface gas$UrlFetchApp {
     fetch(url: string): gas$HTTPResponse;
     fetch(url: string, params: gas$UrlFetchApp$Parameters): gas$HTTPResponse;
     getRequest(url: string): Object;
     getRequest(url: string, params: gas$UrlFetchApp$Parameters): Object;
 }
 
-var UrlFetchApp: gas$UrlFetchApp
+declare var UrlFetchApp: gas$UrlFetchApp
