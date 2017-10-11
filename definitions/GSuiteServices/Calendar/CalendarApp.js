@@ -1,41 +1,41 @@
 // @flow
 // @see https://developers.google.com/apps-script/reference/calendar/calendar-app
 
-interface gas$Calendar$createAllDayEventSeriesOptions {
-  title?: string;
-  startDate?: Date;
-  recurrence?: gas$Calendar$EventRecurrence;
-  options?: Object;
+type gas$Calendar$createAllDayEventSeriesOptions = {
+  title?: string,
+  startDate?: Date,
+  recurrence?: gas$Calendar$EventRecurrence,
+  options?: Object
 }
 
-interface gas$Calendar$createCalendarOptions {
-  location?: string;
-  summary?: string;
-  timeZone?: string;
-  color?: string;
-  hidden?: boolean;
-  selected?: boolean;
+type gas$Calendar$createCalendarOptions = {
+  location?: string,
+  summary?: string,
+  timeZone?: string,
+  color?: string,
+  hidden?: boolean,
+  selected?: boolean
 }
 
-interface gas$Calendar$createEventOptions {
-  description?: string;
-  location?: string;
-  guests?: string;
-  sendInvites?: boolean;
+type gas$Calendar$createEventOptions = {
+  description?: string,
+  location?: string,
+  guests?: string,
+  sendInvites?: boolean
 }
 
-interface gas$Calendar$getEventsOptions {
-  start?: number;
-  max?: number;
-  author?: string;
-  search?: string;
-  statusFilters?: gas$Calendar$GuestStatus[];
+type gas$Calendar$getEventsOptions = {
+  start?: number,
+  max?: number,
+  author?: string,
+  search?: string,
+  statusFilters?: gas$Calendar$GuestStatus[]
 }
 
-interface gas$Calendar$subscribeToCalendarOptions {
-  color?: string;
-  hidden?: boolean;
-  selected?: boolean;
+type gas$Calendar$subscribeToCalendarOptions = {
+  color?: string,
+  hidden?: boolean,
+  selected?: boolean
 }
 
 interface gas$Calendar$CalendarApp {

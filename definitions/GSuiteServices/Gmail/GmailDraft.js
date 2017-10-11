@@ -1,15 +1,15 @@
 // @flow
 // @see https://developers.google.com/apps-script/reference/gmail/gmail-draft
 
-interface gas$Gmail$UpdateOption {
-  attachments?: gas$BlobSource[];
-  bcc?: string;
-  cc?: string;
-  from?: string;
-  htmlBody?: string;
-  inlineImages?: Object;
-  name?: string;
-  replyTo?: string;
+type gas$Gmail$UpdateOption = {
+  attachments?: gas$BlobSource[],
+  bcc?: string,
+  cc?: string,
+  from?: string,
+  htmlBody?: string,
+  inlineImages?: Object,
+  name?: string,
+  replyTo?: string
 }
 
 interface gas$Gmail$GmailDraft {

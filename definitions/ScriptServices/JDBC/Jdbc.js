@@ -18,21 +18,21 @@ interface gas$Jdbc {
 
 declare var Jdbc: gas$Jdbc;
 
-interface gas$Jdbc$CloudSqlConnectionInfo {
-  connectTimeoutSeconds?: number;
-  database?: string;
-  instance?: string;
-  password?: string;
-  queryTimeoutSeconds: number;
-  user?: string;
+type gas$Jdbc$CloudSqlConnectionInfo = {
+  connectTimeoutSeconds?: number,
+  database?: string,
+  instance?: string,
+  password?: string,
+  queryTimeoutSeconds: number,
+  user?: string
 }
 
-interface gas$Jdbc$ConnectionInfo {
-  databaseName: string;
-  password: string;
-  useJDBCCompliantTimeZoneShift: boolean;
-  user: string;
-  _serverSslCertificate: string;
-  _clientSslCertificate: string;
-  _clientSslKey: string;
+type gas$Jdbc$ConnectionInfo = {
+  databaseName: string,
+  password: string,
+  useJDBCCompliantTimeZoneShift: boolean,
+  user: string,
+  _serverSslCertificate: string,
+  _clientSslCertificate: string,
+  _clientSslKey: string
 }

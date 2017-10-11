@@ -1,16 +1,16 @@
 // @flow
 // @see https://developers.google.com/apps-script/reference/gmail/gmail-thread
 
-interface gas$Gmail$ThreadReplyOption {
-  cc?: string;
-  bcc?: string;
-  htmlBody?: string;
-  name?: string;
-  from?: string;
-  replyTo?: string;
-  noReply?: boolean;
-  attachments?: gas$BlobSource[];
-  inlineImages?: Object;
+type gas$Gmail$ThreadReplyOption = {
+  cc?: string,
+  bcc?: string,
+  htmlBody?: string,
+  name?: string,
+  from?: string,
+  replyTo?: string,
+  noReply?: boolean,
+  attachments?: gas$BlobSource[],
+  inlineImages?: Object
 }
 
 

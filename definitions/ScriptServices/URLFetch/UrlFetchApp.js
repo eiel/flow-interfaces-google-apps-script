@@ -4,16 +4,16 @@
 type gas$Method = "post" | "get" | "delete" | "put"
 type gas$Headers = {[string]: string}
 
-interface gas$UrlFetchApp$Parameters {
-    contentType?: string;
-    headers?: Headers;
-    method?: gas$Method;
-    payload?: Object | string;
-    useInternet?: boolean;
-    validateHttpsCertificates?: boolean;
-    followRedirects?: boolean;
-    muteHttpExceptions?: boolean;
-    escaping?: boolean;
+type gas$UrlFetchApp$Parameters = {
+    contentType?: string,
+    headers?: Headers,
+    method?: gas$Method,
+    payload?: Object | string,
+    useInternet?: boolean,
+    validateHttpsCertificates?: boolean,
+    followRedirects?: boolean,
+    muteHttpExceptions?: boolean,
+    escaping?: boolean
 }
 
 interface gas$UrlFetchApp {

@@ -10,27 +10,27 @@ interface gas$MailApp {
 
 declare var MailApp: gas$MailApp;
 
-interface gas$Mail$MailMessage {
-  attachments?: gas$BlobSource[];
-  bcc?: string;
-  body?: string;
-  cc?: string;
-  htmlBody?: string;
-  inlineImages?: Object;
-  name?: string;
-  noReply?: boolean;
-  replyTo?: string;
-  subject?: string;
-  to?: string;
+type gas$Mail$MailMessage = {
+  attachments?: gas$BlobSource[],
+  bcc?: string,
+  body?: string,
+  cc?: string,
+  htmlBody?: string,
+  inlineImages?: Object,
+  name?: string,
+  noReply?: boolean,
+  replyTo?: string,
+  subject?: string,
+  to?: string
 }
 
-interface gas$Mail$MailOptions {
-  attachments?: gas$BlobSource[];
-  bcc?: string;
-  cc?: string;
-  htmlBody?: string;
-  inlineImages?: Object;
-  name?: string;
-  noReply?: boolean;
-  replyTo?: string;
+type gas$Mail$MailOptions = {
+  attachments?: gas$BlobSource[],
+  bcc?: string,
+  cc?: string,
+  htmlBody?: string,
+  inlineImages?: Object,
+  name?: string,
+  noReply?: boolean,
+  replyTo?: string
 }

@@ -1,16 +1,16 @@
 // @flow
 // @see https://developers.google.com/apps-script/reference/spreadsheet/range
 
-interface gas$Spreadsheet$Range$ClearOptions {
-  commentsOnly?: boolean;
-  contentsOnly?: boolean;
-  formatOnly?: boolean;
-  validationsOnly?: boolean;
+type gas$Spreadsheet$Range$ClearOptions = {
+  commentsOnly?: boolean,
+  contentsOnly?: boolean,
+  formatOnly?: boolean,
+  validationsOnly?: boolean,
 }
 
-interface gas$Spreadsheet$Range$CopyToOptions {
-  contentsOnly?: boolean;
-  formatOnly?: boolean;
+type gas$Spreadsheet$Range$CopyToOptions = {
+  contentsOnly?: boolean,
+  formatOnly?: boolean
 }
 
 type gas$Spreadsheet$FontLine = "underline" | "line-through" | "none";

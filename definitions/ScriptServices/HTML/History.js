@@ -1,9 +1,9 @@
 // @flow
 // @see https://developers.google.com/apps-script/guides/html/reference/history
 
-interface gas$History$Event {
-  +state: Object;
-  +location: gas$Location;
+type gas$History$Event = {
+  +state: Object,
+  +location: gas$Location
 }
 
 interface gas$History {
